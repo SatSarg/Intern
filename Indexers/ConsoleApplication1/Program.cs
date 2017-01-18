@@ -14,7 +14,7 @@ namespace Indexer1
         {
          get
             {
-                if (index >= 0 && index <= array.Length)
+                if (index >= 0 && index <array.Length)
                     return array[index];
                 else throw new ArgumentOutOfRangeException();
             }

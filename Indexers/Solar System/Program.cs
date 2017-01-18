@@ -20,7 +20,7 @@ namespace Solar_System
                 }
             }
             throw new ArgumentOutOfRangeException
-                (testPlanet, "test must be ");
+                (testPlanet, "testPlanet must be the correct name of planet");
         }
         public int this[string planet]
         {
@@ -35,7 +35,9 @@ namespace Solar_System
         static void Main(string[] args)
         {
             SolarSystem plan = new SolarSystem();
-            Console.WriteLine(plan["Mars"]);
+            Console.WriteLine("Please enter name of planet to know its number from the - The Sun, Mercury, Venus, Earth,Mars, Jupiter, Saturn, Uranus, Neptune, Pluto ");
+            string st = Console.ReadLine();
+            Console.WriteLine(plan[st]);
 
             //Console.WriteLine(plan["Marsss"]);
 
