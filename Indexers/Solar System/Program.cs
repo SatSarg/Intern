@@ -39,6 +39,7 @@ namespace Solar_System
             string st = Console.ReadLine();
             Console.WriteLine(plan[st]);
 
+            //It's for Exception
             //Console.WriteLine(plan["Marsss"]);
 
             Console.WriteLine("Press any key to exit.");
